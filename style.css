@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
+    color: #FFECD6;
+    font-family: system-ui;
+    font-size: 20px;
+    background-image: url('./img/background2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+textarea {
+    resize: none;
+    background-color: rgba(4, 91, 253, 0.2);
+    color: #FFECD6;
+    font-family: system-ui;
+    font-size: 20px;
+    width: 500px;
+    height: 600px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.caixa {
+    width: 500px;
+    height: 600px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    align-items: center;
+    background-color: rgba(4, 91, 253, 0.2);
+    border-radius: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+header {
+    margin: 10px;
+}
+
+footer {
+    display: flex;
+    align-content:center;
+    justify-content: center;
+    margin: 7%;
+    font-size: 13px;
+    gap: 5px;
+    position: relative;
+}
+
+.secao2 {
+    display: flex;
+    flex-direction: column;
+}
+.botaoCopiar {
+    display: flex;
+    order: 1;
+    margin-left: 450px
+}
+.botaoPrincipal {
+    display: flex;
+    align-items: center;
+    background-color: #0A66C2;
+    border: 0;
+    border-radius: 100px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 20px;
+    max-width: 480px;
+    min-height: 40px;
+    min-width: 0px;
+    overflow: hidden;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    touch-action: manipulation;
+    transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+}
+
+.botaoPrincipal:hover,
+.botaoPrincipal:focus { 
+    background-color: #16437E;
+    color: #ffffff;
+}
+
+.botaoPrincipal:active {
+    background: #09223b;
+    color: rgb(255, 255, 255, .7);
+}
+
+.botaoPrincipal:disabled { 
+    cursor: not-allowed;
+    background: rgba(0, 0, 0, .08);
+    color: rgba(0, 0, 0, .3);
+}
+
+
+.botaoRedes {
+    display: flex;
+    align-items: center;
+    padding: 2px 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+    background: linear-gradient(180deg, #4B91F7 0%, #367AF6 100%);
+    background-origin: border-box;
+    box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    font-size: 13px;
+}
+
+.botaoRedes:focus {
+    box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+    outline: 0;
+}
+
+
+.botaoCopiar {
+    display: flex;
+    align-items: center;
+    padding: 7px 13px;
+    background-color: #0A66C2;
+    border: 0;
+    border-radius: 100px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    justify-content: right;
+    line-height: 20px;
+    max-width: 70px;
+    min-height: 20px;
+    min-width: 0px;
+    overflow: hidden;
+    text-align: center;
+    touch-action: manipulation;
+    transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+}
+
+.botaoCopiar:hover,
+.botaoCopiar:focus { 
+    background-color: #16437E;
+    color: #ffffff;
+}
+
+.botaoCopiar:active {
+    background: #09223b;
+    color: rgb(255, 255, 255, .7);
+}
+
+.botaoCopiar:disabled { 
+    cursor: not-allowed;
+    background: rgba(0, 0, 0, .08);
+    color: rgba(0, 0, 0, .3);
+}
