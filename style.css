@@ -4,20 +4,19 @@
 }
 
 body {
-    height: 100vh;
-    width: 100vw;
-    overflow: scroll;
+    overflow: auto;
     box-sizing: border-box;
     color: #FFECD6;
     font-family: system-ui;
-    font-size: 16px;
+    font-size: 1rem;
     background-image: url('./img/background2.png');
-    background-size: cover;
+    background-size: 100vw 100vh;
     background-repeat: no-repeat;
+    background-color: rgb(2, 16, 41);
 }
 
 header {
-    margin: 1em;
+    padding: 1em;
 }
 
 main {
@@ -28,38 +27,28 @@ main {
 
 textarea {
     resize: none;
-    background-color: rgba(4, 91, 253, 0.2);
+    background-color: rgb(4, 35, 94, 0.5);
     color: #FFECD6;
     font-family: system-ui;
-    font-size: 1.25em; 
-    width: 25em; 
-    height: 30em; 
-    border: 0.0625em solid #ccc; 
-    padding: 0.625em; 
-    margin: 0.625em; 
-    border-radius: 0.625em; 
-}
-
-.caixa {
-    width: 25em; 
+    font-size: 1.25rem; 
+    width: 73%; 
     height: 30em;
     border: 0.0625em solid #ccc; 
     padding: 0.625em; 
-    margin: 0.625em; 
-    align-items: center;
-    background-color: rgba(4, 91, 253, 0.2);
-    border-radius: 0.625em; 
-    font-size: 1.25em; 
+    margin: 5% 3% 2% 3%; 
+    border-radius: 0.625rem; 
 }
 
-footer {
-    display: flex;
-    align-content:center;
-    justify-content: center;
-    margin: 8em;
-    font-size: 0.8125em; 
-    gap: 0.3125em;
-    position: relative;
+.caixa {
+    width: 80%; 
+    height: 30em;
+    border: 0.0625em solid #ccc; 
+    padding: 0.625em; 
+    margin: 5% 3% 2% 3%; 
+    align-items: center;
+    background-color: rgb(4, 35, 94, 0.5);
+    border-radius: 0.625em; 
+    font-size: 1.25rem;
 }
 
 .secao2 {
@@ -67,11 +56,18 @@ footer {
     flex-direction: column;
 }
 
-.botaoCopiar {
+footer {
     display: flex;
-    order: 1;
-    margin-left: 31.5em; 
+    justify-content: center;
+    width: 100%;
+    padding: 0.3eem;
+    font-size: 0.8125rem;
+    gap: 0.3125em;
+    background-color:rgba(0, 0, 0, 0.7);
+    margin-top: 3%;
 }
+
+
 
 .botaoPrincipal {
     display: flex;
@@ -84,23 +80,22 @@ footer {
     cursor: pointer;
     display: inline-flex;
     font-family: system-ui;
-    font-size: 1em; 
+    font-size: 1rem; 
     font-weight: bold;
     justify-content: center;
-    line-height: 1.25em; 
-    max-width: 30em; 
-    min-height: 2.5em; 
-    min-width: 0em;
+    min-height: 20px; 
+    min-width: 120px;
+    max-width: 130px;
     overflow: hidden;
-    padding: 0;
-    padding-left: 1.25em; 
-    padding-right: 1.25em;
+    padding: 1%;
     text-align: center;
     touch-action: manipulation;
     transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
     user-select: none;
     -webkit-user-select: none;
-    vertical-align: middle;
+    margin-left: 3%;
+    order: 1;
+
 }
 
 .botaoPrincipal:hover,
@@ -120,71 +115,22 @@ footer {
     color: rgba(0, 0, 0, 0.3);
 }
 
-.botaoRedes {
-    display: flex;
-    align-items: center;
-    padding: 0.125em 0.875em; 
-    font-family: system-ui;
-    border-radius: 0.375em;
-    border: none;
-    color: #fff;
-    background: linear-gradient(180deg, #4B91F7 0%, #367AF6 100%);
-    background-origin: border-box;
-    box-shadow: 0px 0.03125em 0.09375em rgba(54, 122, 246, 0.25), inset 0px 0.05em 0px -0.015625em rgba(255, 255, 255, 0.2);
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    font-size: 0.8125em;
+@media (max-width:600px) {
+    body {
+        background-image: none;
+        background-color: rgb(2, 16, 41);
+    }
+    .container {
+        flex-direction: column;
+    }
+    textarea {
+        width: 80%; 
+    }
 }
 
-.botaoRedes:focus {
-    box-shadow: inset 0px 0.05em 0px -0.015625em rgba(255, 255, 255, 0.2), 0px 0.03125em 0.09375em rgba(54, 122, 246, 0.25), 0px 0px 0px 0.21875em rgba(58, 108, 217, 0.5);
-    outline: 0;
-}
-
-.botaoCopiar {
-    display: flex;
-    align-items: center;
-    padding: 0.4375em 0.8125em;
-    background-color: #0A66C2;
-    border: 0;
-    border-radius: 6.25em; 
-    box-sizing: border-box;
-    color: #ffffff;
-    cursor: pointer;
-    display: inline-flex;
-    font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
-    font-size: 0.9375em;
-    line-height: 1.25em;
-    max-width: 4.375em; 
-    min-height: 1.25em; 
-    min-width: 0px;
-    overflow: hidden;
-    text-align: center;
-    touch-action: manipulation;
-    transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
-    user-select: none;
-    -webkit-user-select: none;
-    vertical-align: middle;
-}
-
-.botaoCopiar:hover,
-.botaoCopiar:focus { 
-    background-color: #16437E;
-    color: #ffffff;
-}
-
-.botaoCopiar:active {
-    background: #09223b;
-    color: rgba(255, 255, 255, 0.7);
-}
-
-.botaoCopiar:disabled { 
-    cursor: not-allowed;
-    background: rgba(0, 0, 0, 0.08);
-    color: rgba(0, 0, 0, 0.3);
-}
-
-a {
-    text-decoration: none;
+@media (min-width: 601px) and (max-width: 1300px) {
+    body {
+        background-image: url(./img/backgroundtablet.png);
+        background-size: 100vw 100vh;
+    }
 }
